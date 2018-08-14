@@ -4,16 +4,23 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "nuxt build",
+    "lint": "vue-cli-service lint",
+    "dev": "nuxt",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "material-design-icons-iconfont": "^3.0.3",
+    "nuxt": "^1.4.0",
+    "vue": "^2.5.17",
+    "vuetify": "^1.1.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0",
     "@vue/cli-plugin-eslint": "^3.0.0",
     "@vue/cli-service": "^3.0.0",
+    "vue-cli-plugin-nuxt-starter-template": "^0.0.6",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
