@@ -26,6 +26,10 @@
       <nuxt-link class="no-link" to="/">
         <v-toolbar-title>develowlper</v-toolbar-title>
       </nuxt-link>
+      <v-spacer />
+      <v-btn to="/auth/sign-in">
+        Login
+      </v-btn>
     </v-toolbar>
     <v-content>
       <v-container fluid>

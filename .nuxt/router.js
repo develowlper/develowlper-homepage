@@ -3,8 +3,12 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const _0aba1960 = () => import('../src/pages/dashboard/index.vue' /* webpackChunkName: "pages/dashboard/index" */).then(m => m.default || m)
 const _0540a7c0 = () => import('../src/pages/components/index.vue' /* webpackChunkName: "pages/components/index" */).then(m => m.default || m)
 const _5a82aa68 = () => import('../src/pages/impress.vue' /* webpackChunkName: "pages/impress" */).then(m => m.default || m)
+const _3b82ba16 = () => import('../src/pages/auth/signed-in.vue' /* webpackChunkName: "pages/auth/signed-in" */).then(m => m.default || m)
+const _6ec86655 = () => import('../src/pages/auth/sign-in.vue' /* webpackChunkName: "pages/auth/sign-in" */).then(m => m.default || m)
+const _c6111b22 = () => import('../src/pages/auth/sign-off.vue' /* webpackChunkName: "pages/auth/sign-off" */).then(m => m.default || m)
 const _0508e74a = () => import('../src/pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
@@ -66,6 +70,11 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
+			path: "/dashboard",
+			component: _0aba1960,
+			name: "dashboard"
+		},
+		{
 			path: "/components",
 			component: _0540a7c0,
 			name: "components"
@@ -74,6 +83,21 @@ export function createRouter () {
 			path: "/impress",
 			component: _5a82aa68,
 			name: "impress"
+		},
+		{
+			path: "/auth/signed-in",
+			component: _3b82ba16,
+			name: "auth-signed-in"
+		},
+		{
+			path: "/auth/sign-in",
+			component: _6ec86655,
+			name: "auth-sign-in"
+		},
+		{
+			path: "/auth/sign-off",
+			component: _c6111b22,
+			name: "auth-sign-off"
 		},
 		{
 			path: "/",

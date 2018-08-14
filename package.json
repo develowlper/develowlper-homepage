@@ -11,8 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "auth0-lock": "^11.8.1",
+    "js-cookie": "^2.2.0",
+    "jwt-decode": "^2.2.0",
     "material-design-icons-iconfont": "^3.0.3",
     "nuxt": "^1.4.0",
+    "uuid": "^3.3.2",
     "vue": "^2.5.17",
     "vuetify": "^1.1.11"
   },
@@ -22,20 +26,6 @@
     "@vue/cli-service": "^3.0.0",
     "vue-cli-plugin-nuxt-starter-template": "^0.0.6",
     "vue-template-compiler": "^2.5.17"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
   },
   "postcss": {
     "plugins": {

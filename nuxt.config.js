@@ -4,6 +4,9 @@ module.exports = {
   ** Set source directory
   */
   srcDir: 'src/',
+  router: {
+    middleware: 'check-auth'
+  },
   /*
   ** Headers of the page
   */
@@ -38,4 +41,8 @@ module.exports = {
     '~/plugins/vuetify',
     '~/plugins/material-design-icons'
   ],
+  env: {
+    AUTH0_CLIENT_ID: '',
+    AUTH0_CLIENT_DOMAIN: ''
+  }
 }
